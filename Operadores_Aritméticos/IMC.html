@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Site com JavaScript</title>
+
+</head>
+<body>
+    <div class ="patterns pt1">
+        <h1>Olá mundo! Este é minha primeira página</h1>
+        <!-- Consulta números pares e imper -->
+        <script>
+            window.alert("Consulta IMC")
+            var peso = Number(window.prompt("Digite seu peso: "))
+            var altura = Number(window.prompt("Digite sua altura: "))
+            var IMC =(peso/(altura **2))
+            if (IMC < 18,5){
+            window.alert("IMC = " +IMC+ ".Classificação Baixo Peso ")
+        }
+
+            else if(IMC == 18,5 && IMC== 24,9){
+                window.alert("IMC = " +IMC+ ".Classificação Normal ")
+            }
+
+            else if(IMC == 25 && IMC== 29,9){
+                window.alert("IMC = " +IMC+ ".Classificação Sobrepeso ")
+            }
+
+            else if(IMC == 30 && IMC== 34,9){
+                window.alert("IMC = " +IMC+ ".Classificação Obesidade ")
+            }
+            
+            else if(IMC == 35 && IMC== 39,9){
+                window.alert("IMC = " +IMC+ ".Classificação Obesidade Mórbida ")
+            }
+             
+            else if(IMC >40){
+                window.alert("IMC = " +IMC+ ".Classificação Obesidade Mórbida ")
+            }
+
+        </script>
+
+    </div>
+    
+</body>
+</html>
