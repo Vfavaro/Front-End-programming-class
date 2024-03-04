@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Site com JavaScript</title>
+
+</head>
+<body>
+    <div class ="patterns pt1">
+        <h1>Olá mundo! Este é minha primeira página</h1>
+        <!-- Adivinhar número escolhido pelo usuário -->
+        <script>
+            window.alert("Adivinhando número escolhido")
+            function adivinharNumero() {
+    let min = 1;
+    let max = 100;
+    let tentativas = 0;
+
+    while (true) {
+
+        let chute = Math.floor((min + max) / 2);
+        tentativas++;
+
+        let resposta = prompt(`É ${chute}? Responda com 'sim', 'maior' ou 'menor'`);
+
+        if (resposta.toLowerCase() === 'sim') {
+            alert(`Acertei em ${tentativas} tentativas! O número é ${chute}.`);
+            break;
+        } else if (resposta.toLowerCase() === 'maior') {
+            min = chute + 1;
+        } else if (resposta.toLowerCase() === 'menor') {
+            max = chute - 1;
+        } else {
+            alert("Por favor, responda com 'sim', 'maior' ou 'menor'.");
+        }
+    }
+}
+adivinharNumero();
+
+        </script>
+
+    </div>
+    
+</body>
+</html>  

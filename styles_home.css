@@ -84,3 +84,12 @@ ul {
 li {
   margin-bottom: 10px;
 }
+
+.aulas-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 20px;
+  overflow: hidden;
+  gap: 20px; /* Adiciona espaços de 20px entre os quadrados */
+}

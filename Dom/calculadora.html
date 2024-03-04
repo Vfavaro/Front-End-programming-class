@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Site com JavaScript</title>
+
+</head>
+<body>
+    <div class ="patterns pt1">
+        <h1>Calculadora</h1>
+        <!-- Calculadora -->
+        <script>
+   
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        function subtract(num1, num2) {
+            return num1 - num2;
+        }
+
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+        function exponentiation(num1) {
+            return num1 * num2;
+        }
+
+        function squareRoot(num1) {
+            return Math. sqrt(num1);
+        }
+
+        function divide(x, y) {
+            if (num2 === 0) {
+                return "Erro! Divisão por zero.";
+            } else {
+                return num1 / num2;
+            }
+        }
+
+        function calculator() {
+            var operation = prompt("Escolha a operação: adição, subtração, multiplicação, exponenciação, raiz quadrada, divisão").toLowerCase();
+            var num1 = parseFloat(prompt("Digite o primeiro número:"));
+            var num2 = parseFloat(prompt("Digite o segundo número:"));
+
+            var result;
+
+            switch (operation) {
+                case "adição":
+                    result = add(num1, num2);
+                    break;
+                case "subtração":
+                    result = subtract(num1, num2);
+                    break;
+                case "multiplicação":
+                    result = multiply(num1, num2);
+                    break;
+                case "divisão":
+                    result = divide(num1, num2);
+                    break;
+                case "exponenciação":
+                    result = exponentiation(num1);
+                    break;
+                case "raiz quadrada":
+                    result = squareRoot(num1);
+                    break;
+                default:
+                    result = "Operação inválida!";
+            }
+
+            console.log("Resultado: " + result);
+        }
+        calculator();
+    </script>
+        
+    </div>
+    
+</body>
+<html>
+   
